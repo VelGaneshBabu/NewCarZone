@@ -1,0 +1,15 @@
+6.11.2024
+---------
+
+>pip freeze
+>virtualenv --version
+>python -m venv venv ( Creating Virtual Environment)
+>venv\scripts\activate(To activate the Virtual Environment)
+>venv\scripts\deactivate(To deactivate the virtual Environment)
+>pip install django
+>django-admin --version (To check th Django Version (5.1.3))
+>python.exe -m pip install --upgrade pip ( To upgrade pip)
+>django-admin startproject carzone .(To create the django Project)
+>python manage.py runserver ( To run local server)
+>python manage.py startapp pages(To create pages app, Created apps need to configure in settiing.py INSTALLED_APPS Section (like ('pages.apps.PagesConfig'))
+
