@@ -11,5 +11,15 @@
 >python.exe -m pip install --upgrade pip ( To upgrade pip)
 >django-admin startproject carzone .(To create the django Project)
 >python manage.py runserver ( To run local server)
->python manage.py startapp pages(To create pages app, Created apps need to configure in settiing.py INSTALLED_APPS Section (like ('pages.apps.PagesConfig'))
+>python manage.py startapp pages(To create pages app, Created apps need to configure in setting.py INSTALLED_APPS Section (like ('pages.apps.PagesConfig'))
+
+> After Created the Git Repository ( need to do Following Commands )
+echo "# NewCarZone" >> README.md
+git init
+git add README.md
+git add -A
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/VelGaneshBabu/NewCarZone.git
+git push -u origin master
 
