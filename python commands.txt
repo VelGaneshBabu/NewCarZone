@@ -1,4 +1,6 @@
-6.11.2024
+6.11.2024 - https://github.com/dev-rathankumar/carzone-gitproject
+
+Python Django - Build Complex MultiVendor Ecommerce System
 ---------
 
 >pip freeze
@@ -22,4 +24,16 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/VelGaneshBabu/NewCarZone.git
 git push -u origin master
+
+> Create Folder Static in the Project Folder and copy the CSS, Img, JS and fonts folder 
+> Next in the Settings.py need to configure the Static Folder
+   STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+   STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, 'carzone/static'),
+]
+
+>python manage.py --help ( To get all the Commands )
+>python manage.py collectstatic
+
+	
 
