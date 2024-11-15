@@ -1,5 +1,18 @@
 6.11.2024 - https://github.com/dev-rathankumar/carzone-gitproject
 
+Postgres SQL User Name & Password
+---------------------------------
+UserName : postgres
+Password : Django@2024
+PORT     : 5432
+
+Django admin username & password
+--------------------------------
+User name  : admin 
+Password   : Goodday@2024
+
+
+
 Python Django - Build Complex MultiVendor Ecommerce System
 ---------
 
@@ -34,6 +47,26 @@ git push -u origin master
 
 >python manage.py --help ( To get all the Commands )
 >python manage.py collectstatic
+>In Settings.py need to configure the Database setup ( Engine,Database Name, User Name,Password, HOST)
+>python manage.py makemigrations
+>python manage.py migrate
+>pip install pycycorg2
+>python manage.py createsuperuser
+>Pip install pillow ( for photos and media need to install )
+>Create model in Models.py ( to create Database fields )
+>The Created models has to register in admin.py (admin.site.register(Team))
+
+>For Media need to configure the Settings.py file
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL  = '/media/'
+
+>For media file store need to configure in project urls.py file
+from django.conf.urls.static import static
+from django.conf import settings
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 	
 
